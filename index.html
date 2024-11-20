@@ -1,1 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sara X Executor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      line-height: 1.6;
+      overflow-y: auto;
+      position: relative;
+      color: #FFFFFF;
+      cursor: pointer;
+      user-select: none;
+      background-color: #000;
+    }
 
+    /* Video as background */
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      padding: 16px;
+      gap: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    a:hover {
+      background-color: #0056b3;
+      color: #FFFFFF;
+      transform: scale(1.05);
+    }
+
+    .main-title {
+      font-size: 3.5em;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      color: #00B0FF;
+      animation: fadeIn 1s ease-in-out, float 6s ease-in-out infinite;
+    }
+
+    .sub-title {
+      font-size: 1.2em;
+      color: #FFFFFF;
+      margin-bottom: 40px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+      padding: 0 10px;
+    }
+
+    .btn-container {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 24px;
+    }
+
+    .button {
+      background-color: #007BFF;
+      color: #FFFFFF;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 1.1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+      animation: slideIn 0.5s ease-in-out, float 6s ease-in-out infinite;
+    }
+    .button:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    section {
+      padding: 60px 16px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      border-bottom: 1px solid #333;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .description {
+      margin-top: 30px;
+      max-width: 700px;
+      font-size: 1.1em;
+      color: #FFFFFF;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+
+    .credits {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #BBBBBB;
+    }
+
+    /* Showcase Image */
+    .showcase-image {
+      width: 80%;
+      max-width: 800px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Section Title */
+    .section-title {
+      font-size: 2em;
+      font-weight: bold;
+      color: #00B0FF;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video class="background-video" autoplay loop muted>
+    <source src="pluto interface/dark-galaxy.960x540.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Header with Navigation -->
+  <header>
+    <a href="#home">Home</a>
+    <a href="https://github.com/XxSolarXx/Sera-X-web" target="_blank" rel="noopener noreferrer">Download</a>
+    <a href="https://discord.gg/nzVKrS33tV" target="_blank" rel="noopener noreferrer">Discord</a>
+    <a href="#credits">Credits</a>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1 class="main-title">Sara X Executor</h1>
+    <p class="sub-title">Experience a 84% UNC Execution, it executes effectively and allows you to unlock a new world of cheats in your Roblox games. You can join our server for support or use our scripts we have for you to test. Download Now and experience this all!</p>
+    <p class="description">Join our community for support, updates, and more!</p>
+
+    <!-- Application Showcase Image -->
+    <div class="section-title">Sara X Executor Showcase</div>
+    <img src="pluto interface/image.png" alt="Sara X Executor Showcase" class="showcase-image">
+
+    <!-- Button Section -->
+    <div class="btn-container">
+      <!-- Discord Button -->
+      <a href="https://discord.gg/nzVKrS33tV" class="button" target="_blank" rel="noopener noreferrer">Join our Discord</a>
+
+      <!-- Sara X Executor Button -->
+      <a href="https://github.com/XxSolarXx/Sera-X-web" class="button" target="_blank" rel="noopener noreferrer">Go to Sara X Executor</a>
+    </div>
+  </section>
+
+  <!-- Credits Section -->
+  <section id="credits">
+    <h2 class="section-title">Credits</h2>
+    <p class="credits">This interface was made by Solar (@ytz_solar).</p>
+  </section>
+
+</body>
+</html>
